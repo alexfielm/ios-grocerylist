@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		EF37EB502DFC789F00B06DEA /* grocerylist-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grocerylist-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF37EB502DFC789F00B06DEA /* grocerylistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocerylistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		EF37EB512DFC789F00B06DEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF37EB502DFC789F00B06DEA /* grocerylist-App.app */,
+				EF37EB502DFC789F00B06DEA /* grocerylistApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF37EB4F2DFC789F00B06DEA /* grocerylist-App */ = {
+		EF37EB4F2DFC789F00B06DEA /* grocerylistApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF37EB5B2DFC78A000B06DEA /* Build configuration list for PBXNativeTarget "grocerylist-App" */;
+			buildConfigurationList = EF37EB5B2DFC78A000B06DEA /* Build configuration list for PBXNativeTarget "grocerylistApp" */;
 			buildPhases = (
 				EF37EB4C2DFC789F00B06DEA /* Sources */,
 				EF37EB4D2DFC789F00B06DEA /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				EF37EB522DFC789F00B06DEA /* grocerylist-App */,
 			);
-			name = "grocerylist-App";
+			name = grocerylistApp;
 			packageProductDependencies = (
 			);
 			productName = "grocerylist-App";
-			productReference = EF37EB502DFC789F00B06DEA /* grocerylist-App.app */;
+			productReference = EF37EB502DFC789F00B06DEA /* grocerylistApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF37EB4B2DFC789F00B06DEA /* Build configuration list for PBXProject "grocerylist-App" */;
+			buildConfigurationList = EF37EB4B2DFC789F00B06DEA /* Build configuration list for PBXProject "grocerylistApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF37EB4F2DFC789F00B06DEA /* grocerylist-App */,
+				EF37EB4F2DFC789F00B06DEA /* grocerylistApp */,
 			);
 		};
 /* End PBXProject section */
@@ -301,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF37EB4B2DFC789F00B06DEA /* Build configuration list for PBXProject "grocerylist-App" */ = {
+		EF37EB4B2DFC789F00B06DEA /* Build configuration list for PBXProject "grocerylistApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF37EB592DFC78A000B06DEA /* Debug */,
@@ -310,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF37EB5B2DFC78A000B06DEA /* Build configuration list for PBXNativeTarget "grocerylist-App" */ = {
+		EF37EB5B2DFC78A000B06DEA /* Build configuration list for PBXNativeTarget "grocerylistApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF37EB5C2DFC78A000B06DEA /* Debug */,
