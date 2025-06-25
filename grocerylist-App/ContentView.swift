@@ -13,6 +13,8 @@ struct ContentView: View {
     
     @Environment(\.modelContext) private var modelContext
     @Query private var groceries: [Grocery] //esto muestra en pantalla todo lo que esta en groceries
+    @State private var item: String = ""
+    @FocusState private var isFocused: Bool
     var body: some View {
         NavigationStack{
             List{
@@ -58,6 +60,40 @@ struct ContentView: View {
                     if groceries.isEmpty{
                         ContentUnavailableView("Empty cart", systemImage: "cart.circle", description: Text("Add new groceries to your cart"))
                     }
+                }
+                .safeAreaInset(edge: .bottom){
+                    VStack{
+                        TextField("", text: $item)
+                            //definimos el estilo del textfield
+                            .textFieldStyle(.plain)
+                            .padding(8)
+                            .background(.tertiary)
+                            .cornerRadius(8)
+                            .font(.title.weight(.light)) //y del texto del mismo
+                            .focused($isFocused)
+                        
+                        Button{
+                            let addGrocery = Grocery(groceryName: item, groceryQuantity: 1, isBought: false)
+                            //guard cumple funcion similar a un if else, pero con retorno/escape obligatorio
+                            guard !item.isEmpty else{//decimos que si el textfield está vacio no guarde nada
+                                return
+                            }
+                            //si no esta vacio guarda en memoria
+                            modelContext.insert(addGrocery)
+                            isFocused = false
+                            item = ""
+                        }label: {
+                            Text("Save")
+                                //definimos estilos del texto del boton
+                                .font(.title2.weight(.medium))//esto le da estilo al texto del boton
+                                .frame(maxWidth: .infinity)//esto le da el largo al boton, que seria del maximo (.infonity)
+                        }
+                        .buttonStyle(.borderedProminent)//esto le da el fondo azul
+                        .buttonBorderShape(.roundedRectangle)
+                        .controlSize(.large)//define el ancho del boton
+                    }
+                    .padding()
+                    .background(.bar)
                 }
         }
     }
